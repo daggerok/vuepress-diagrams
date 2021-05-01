@@ -1,0 +1,30 @@
+{
+  "name": "vuepress-docs-how-too",
+  "version": "1.0.0",
+  "description": "Quick and fast rapid VuePress documentation development",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "vuepress dev --no-clear-screen .",
+    "build": "vuepress build --no-cache .",
+    "gh-pages": "cross-env BASE='/vuepress-docs-how-too/' npm run build",
+    "test": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daggerok/vuepress-docs-how-too.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daggerok/vuepress-docs-how-too/issues"
+  },
+  "homepage": "https://github.com/daggerok/vuepress-docs-how-too#readme",
+  "devDependencies": {
+    "cross-env": "7.0.3",
+    "markdown-it-vuepress-code-snippet-enhanced": "1.0.1",
+    "vuepress": "1.8.2",
+    "vuepress-theme-default-prefers-color-scheme": "2.0.0"
+  }
+}
