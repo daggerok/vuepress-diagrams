@@ -11,6 +11,30 @@ footer: Made by Maksim Kostromin with ❤️ 🤘
 Quick and fast rapid VuePress documentation diagrams development
 [[toc]]
 
+## Mermaid
+
+```
+<mermaid>
+graph TD
+  A[Silvester] -->|Get money| B(Go shopping)
+  B --> C{Let me think}
+  C -->|One| D[Laptop]
+  C -->|Two| E[iPhone]
+  C -->|Three| F[Car]
+  C -->|Four| F[Mac]
+</mermaid>
+```
+
+<mermaid>
+graph TD
+  A[Silvester] -->|Get money| B(Go shopping)
+  B --> C{Let me think}
+  C -->|One| D[Laptop]
+  C -->|Two| E[iPhone]
+  C -->|Three| F[Car]
+  C -->|Four| F[Mac]
+</mermaid>
+
 ## Quickstart new project
 
 Start from documentation:
