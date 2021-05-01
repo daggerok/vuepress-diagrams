@@ -26,11 +26,10 @@ module.exports = {
   },
   markdown: {
     extendMarkdown: md => {
-      md.set({ html: true });
-      md.use(require('markdown-it-katex'));
-      md.use(require('markdown-it-plantuml'));
-      md.use(require('markdown-it-admonition'));
       md.use(require('markdown-it-vuepress-code-snippet-enhanced'));
+      md.set({ html: true });                    // required by mermaid
+      md.use(require('markdown-it-plantuml'));   // required by PalmUML
+      md.use(require('markdown-it-katex'));      // required by Math
     },
   },
 };

@@ -28,6 +28,8 @@
     "vuepress-theme-default-prefers-color-scheme": "2.0.0"
   },
   "dependencies": {
+    "github-markdown-css": "4.0.0",
+    "katex": "0.6.0",
     "markdown-it-admonition": "1.0.4",
     "markdown-it-katex": "2.0.3",
     "markdown-it-plantuml": "1.4.1",

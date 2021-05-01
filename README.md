@@ -13,6 +13,44 @@ Quick and fast rapid VuePress documentation diagrams development
 
 ## Mermaid
 
+### Class diagram
+
+```scala
+<mermaid>
+classDiagram
+Class01 <|-- AveryLongClass : Cool
+Class03 *-- Class04
+Class05 o-- Class06
+Class07 .. Class08
+Class09 --> C2 : Where am i?
+Class09 --* C3
+Class09 --|> Class07
+Class07 : equals()
+Class07 : Object[] elementData
+Class01 : size()
+Class01 : int chimp
+Class01 : int gorilla
+Class08 <--> C2: Cool label
+</mermaid>
+```
+
+<mermaid>
+classDiagram
+Class01 <|-- AveryLongClass : Cool
+Class03 *-- Class04
+Class05 o-- Class06
+Class07 .. Class08
+Class09 --> C2 : Where am i?
+Class09 --* C3
+Class09 --|> Class07
+Class07 : equals()
+Class07 : Object[] elementData
+Class01 : size()
+Class01 : int chimp
+Class01 : int gorilla
+Class08 <--> C2: Cool label
+</mermaid>
+
 ### Graph
 
 ```scala
@@ -392,6 +430,166 @@ strict digraph cool {
   get -> require
 }
 @enduml
+
+## Charts
+
+### Bar chart
+
+```vue
+<bar-chart :data="[
+    ['Assignments', 10],
+    ['Midterm', 35],
+    ['Final', 55]]"
+/>
+```
+
+<bar-chart :data="[
+    ['Assignments', 10],
+    ['Midterm', 35],
+    ['Final', 55]]"
+/>
+
+### Pie chart
+
+```vue
+<pie-chart :data="[
+    ['Assignments', 10],
+    ['Midterm', 35],
+    ['Final', 55]]"
+/>
+```
+
+<pie-chart :data="[
+    ['Assignments', 10],
+    ['Midterm', 35],
+    ['Final', 55]]"
+/>
+
+### Column chart
+
+```vue
+<column-chart :data="[
+    ['Assignments', 10],
+    ['Midterm', 35],
+    ['Final', 55]]"
+/>
+```
+
+<column-chart :data="[
+    ['Assignments', 10],
+    ['Midterm', 35],
+    ['Final', 55]]"
+/>
+
+_another sample_
+
+```vue
+<column-chart :data="[
+    ['Sun', 32],
+    ['Mon', 46],
+    ['Tue', 28],
+]"/>
+```
+
+<column-chart :data="[
+    ['Sun', 32],
+    ['Mon', 46],
+    ['Tue', 28],
+]" />
+
+### Area chart
+
+```vue
+<area-chart :data="[
+    ['Assignments', 10],
+    ['Midterm', 35],
+    ['Final', 55]
+]" />
+```
+
+<area-chart :data="[
+    ['Assignments', 10],
+    ['Midterm', 35],
+    ['Final', 55]
+]" />
+
+_another sample_
+
+```vue
+<area-chart :data="{
+    '2017-01-01': 11,
+    '2017-01-02': 6,
+    '2017-01-03': 7,
+    '2017-01-04': 8,
+    '2017-01-05': 3,
+}" />
+```
+
+<area-chart :data="{
+    '2017-01-01': 11,
+    '2017-01-02': 6,
+    '2017-01-03': 7,
+    '2017-01-04': 8,
+    '2017-01-05': 3,
+}" />
+
+### Scatter chart
+
+```vue
+<scatter-chart
+    xtitle="Size"
+    ytitle="Population"
+    :data="[
+        [175.0, 80.0],
+        [175.3, 60.1],
+        [175.5, 55.2],
+        [175.8, 42.4],
+        [176.0, 38.3],
+    ]"
+/>
+```
+
+<scatter-chart
+    xtitle="Size"
+    ytitle="Population"
+    :data="[
+        [175.0, 80.0],
+        [175.3, 60.1],
+        [175.5, 55.2],
+        [175.8, 42.4],
+        [176.0, 38.3],
+    ]"
+/>
+
+### Line chart
+
+```vue
+<line-chart :data="[
+    { name: 'Workout',      data: { '2017-01-01': 3, '2017-01-02': 4 } },
+    { name: 'Call parents', data: { '2017-01-01': 5, '2017-01-02': 3 } },
+]" />
+```
+
+<line-chart :data="[
+    { name: 'Workout',      data: { '2017-01-01': 3, '2017-01-02': 4 } },
+    { name: 'Call parents', data: { '2017-01-01': 5, '2017-01-02': 3 } },
+]" />
+
+## Math
+
+```scala
+$x^2 + x_2 = x_2 + x^2$
+```
+
+$x^2 + x_2 = x_2 + x^2$
+
+_yet another sample_
+
+```scala
+$$x^2 + x = x + x^2$$
+```
+
+$$x^2 + x = x + x^2$$
 
 ## Quickstart new project
 
