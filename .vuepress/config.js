@@ -10,12 +10,26 @@ module.exports = {
     ['link', { rel: 'icon', href: '/favicon.ico' }],
   ],
   extend: '@vuepress/theme-default',
-  theme: 'default-prefers-color-scheme',
+  // theme: 'default-prefers-color-scheme',
+  theme: 'cool',
+  displayAllHeaders: true,
+  editLinks: true,
+  configureWebpack: {
+    resolve: {
+      alias: {
+        '@alias': '../img',
+      },
+    },
+  },
   themeConfig: {
     repo: 'daggerok/vuepress-diagrams',
   },
   markdown: {
     extendMarkdown: md => {
+      md.set({ html: true });
+      md.use(require('markdown-it-katex'));
+      md.use(require('markdown-it-plantuml'));
+      md.use(require('markdown-it-admonition'));
       md.use(require('markdown-it-vuepress-code-snippet-enhanced'));
     },
   },

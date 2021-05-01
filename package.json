@@ -26,5 +26,11 @@
     "markdown-it-vuepress-code-snippet-enhanced": "1.0.1",
     "vuepress": "1.8.2",
     "vuepress-theme-default-prefers-color-scheme": "2.0.0"
+  },
+  "dependencies": {
+    "markdown-it-admonition": "1.0.4",
+    "markdown-it-katex": "2.0.3",
+    "markdown-it-plantuml": "1.4.1",
+    "vuepress-theme-cool": "1.3.1"
   }
 }
