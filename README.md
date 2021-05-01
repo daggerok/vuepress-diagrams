@@ -67,3 +67,8 @@ Checkout `.github/workflows/ci.yaml` file to see how easily you can deploy your 
 @[code transcludeWith=::include lang=yaml](@/.github/workflows/ci.yaml)
 
 That README.md documentation file is compiled and deployed on [GitHub Pages](https://daggerok.github.io/vuepress-diagrams/)
+
+## A M E Л И Я
+
+❤️
+🎾
