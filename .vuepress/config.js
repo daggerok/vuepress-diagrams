@@ -9,7 +9,7 @@ module.exports = {
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
     ['link', { rel: 'icon', href: '/favicon.ico' }],
   ],
-  extend: '@vuepress/theme-default',
+  // extend: '@vuepress/theme-default',
   // theme: 'default-prefers-color-scheme',
   theme: 'cool',
   displayAllHeaders: true,
