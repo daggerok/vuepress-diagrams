@@ -11,7 +11,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     
-    <link rel="preload" href="/vuepress-diagrams/assets/css/0.styles.edf1c97a.css" as="style"><link rel="preload" href="/vuepress-diagrams/assets/js/app.89425aeb.js" as="script"><link rel="preload" href="/vuepress-diagrams/assets/js/2.454d1032.js" as="script"><link rel="preload" href="/vuepress-diagrams/assets/js/11.857d5efa.js" as="script"><link rel="preload" href="/vuepress-diagrams/assets/js/10.208fd17e.js" as="script"><link rel="prefetch" href="/vuepress-diagrams/assets/js/3.56bdfb54.js"><link rel="prefetch" href="/vuepress-diagrams/assets/js/4.913c03de.js"><link rel="prefetch" href="/vuepress-diagrams/assets/js/5.d90e3f1c.js"><link rel="prefetch" href="/vuepress-diagrams/assets/js/6.bd6677a9.js"><link rel="prefetch" href="/vuepress-diagrams/assets/js/7.6f9373ba.js"><link rel="prefetch" href="/vuepress-diagrams/assets/js/8.afcebc71.js"><link rel="prefetch" href="/vuepress-diagrams/assets/js/9.472751fc.js">
+    <link rel="preload" href="/vuepress-diagrams/assets/css/0.styles.edf1c97a.css" as="style"><link rel="preload" href="/vuepress-diagrams/assets/js/app.69efda17.js" as="script"><link rel="preload" href="/vuepress-diagrams/assets/js/2.454d1032.js" as="script"><link rel="preload" href="/vuepress-diagrams/assets/js/11.bc96bbd9.js" as="script"><link rel="preload" href="/vuepress-diagrams/assets/js/10.208fd17e.js" as="script"><link rel="prefetch" href="/vuepress-diagrams/assets/js/3.56bdfb54.js"><link rel="prefetch" href="/vuepress-diagrams/assets/js/4.913c03de.js"><link rel="prefetch" href="/vuepress-diagrams/assets/js/5.d90e3f1c.js"><link rel="prefetch" href="/vuepress-diagrams/assets/js/6.bd6677a9.js"><link rel="prefetch" href="/vuepress-diagrams/assets/js/7.6f9373ba.js"><link rel="prefetch" href="/vuepress-diagrams/assets/js/8.afcebc71.js"><link rel="prefetch" href="/vuepress-diagrams/assets/js/9.472751fc.js">
     <link rel="stylesheet" href="/vuepress-diagrams/assets/css/0.styles.edf1c97a.css">
   </head>
   <body>
@@ -24,15 +24,15 @@
     </h1> <p class="description">
       Diagrams quickstart
     </p> <!----></header> <!----> <div class="theme-default-content custom content__default"><h1 id="vuepress-diagrams"><a href="#vuepress-diagrams" class="header-anchor">#</a> vuepress-diagrams <a href="https://github.com/daggerok/vuepress-diagrams/actions/workflows/ci.yaml" target="_blank" rel="noopener noreferrer"><img src="https://github.com/daggerok/vuepress-diagrams/actions/workflows/ci.yaml/badge.svg" alt="GitHub actions"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h1> <p>Quick and fast rapid VuePress documentation diagrams development
-</p><div class="table-of-contents"><ul><li><a href="#mermaid">Mermaid</a></li><li><a href="#quickstart-new-project">Quickstart new project</a></li><li><a href="#build-and-serve">Build and serve</a></li><li><a href="#publish-via-ci">Publish via CI</a></li><li><a href="#a-m-e-л-и-я">A M E Л И Я</a></li></ul></div><p></p> <h2 id="mermaid"><a href="#mermaid" class="header-anchor">#</a> Mermaid</h2> <div class="language- extra-class"><pre class="language-text"><code>&lt;mermaid&gt;
+</p><div class="table-of-contents"><ul><li><a href="#mermaid">Mermaid</a><ul><li><a href="#graph">Graph</a></li><li><a href="#sequence-diagram">Sequence diagram</a></li><li><a href="#gantt-diagram">Gantt diagram</a></li><li><a href="#mermaid-8-4-3-state-diagram">Mermaid 8.4.3+ =&gt; State diagram</a></li></ul></li><li><a href="#uml">UML</a><ul><li><a href="#plantuml">PlantUml</a></li><li><a href="#mindmap">MindMap</a></li><li><a href="#nodes">Nodes</a></li><li><a href="#steps-flow">Steps flow</a></li><li><a href="#notes-flow">Notes flow</a></li><li><a href="#solidity-diagraph">Solidity Diagraph</a></li></ul></li><li><a href="#quickstart-new-project">Quickstart new project</a></li><li><a href="#build-and-serve">Build and serve</a></li><li><a href="#publish-via-ci">Publish via CI</a></li><li><a href="#rtfm">rtfm</a></li></ul></div><p></p> <h2 id="mermaid"><a href="#mermaid" class="header-anchor">#</a> Mermaid</h2> <h3 id="graph"><a href="#graph" class="header-anchor">#</a> Graph</h3> <div class="language-scala extra-class"><pre class="language-scala"><code><span class="token generics"><span class="token punctuation">&lt;</span>mermaid<span class="token punctuation">&gt;</span></span>
 graph TD
-  A[Silvester] --&gt;|Get money| B(Go shopping)
-  B --&gt; C{Let me think}
-  C --&gt;|One| D[Laptop]
-  C --&gt;|Two| E[iPhone]
-  C --&gt;|Three| F[Car]
-  C --&gt;|Four| F[Mac]
-&lt;/mermaid&gt;
+  A<span class="token punctuation">[</span>Silvester<span class="token punctuation">]</span> <span class="token operator">--</span><span class="token operator">&gt;</span><span class="token operator">|</span>Get money<span class="token operator">|</span> B<span class="token punctuation">(</span>Go shopping<span class="token punctuation">)</span>
+  B <span class="token operator">--</span><span class="token operator">&gt;</span> C<span class="token punctuation">{</span>Let me think<span class="token punctuation">}</span>
+  C <span class="token operator">--</span><span class="token operator">&gt;</span><span class="token operator">|</span>One<span class="token operator">|</span> D<span class="token punctuation">[</span>Laptop<span class="token punctuation">]</span>
+  C <span class="token operator">--</span><span class="token operator">&gt;</span><span class="token operator">|</span>Two<span class="token operator">|</span> E<span class="token punctuation">[</span>iPhone<span class="token punctuation">]</span>
+  C <span class="token operator">--</span><span class="token operator">&gt;</span><span class="token operator">|</span>Three<span class="token operator">|</span> F<span class="token punctuation">[</span>Car<span class="token punctuation">]</span>
+  C <span class="token operator">--</span><span class="token operator">&gt;</span><span class="token operator">|</span>Four<span class="token operator">|</span> F<span class="token punctuation">[</span>Mac<span class="token punctuation">]</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>mermaid<span class="token operator">&gt;</span>
 </code></pre></div><div class="mermaid">
 graph TD
   A[Silvester] --&gt;|Get money| B(Go shopping)
@@ -41,7 +41,181 @@ graph TD
   C --&gt;|Two| E[iPhone]
   C --&gt;|Three| F[Car]
   C --&gt;|Four| F[Mac]
-</div> <h2 id="quickstart-new-project"><a href="#quickstart-new-project" class="header-anchor">#</a> Quickstart new project</h2> <p>Start from documentation:</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">mkdir</span> /tmp/1 <span class="token operator">&amp;&amp;</span> <span class="token function">wget</span> -qO- https://github.com/daggerok/vuepress-diagrams/archive/master.zip <span class="token operator">|</span> <span class="token function">tar</span> xvf - -C <span class="token variable">$_</span>
+</div> <h3 id="sequence-diagram"><a href="#sequence-diagram" class="header-anchor">#</a> Sequence diagram</h3> <div class="language-scala extra-class"><pre class="language-scala"><code><span class="token generics"><span class="token punctuation">&lt;</span>mermaid<span class="token punctuation">&gt;</span></span>
+sequenceDiagram
+    Alice<span class="token operator">-&gt;</span><span class="token operator">&gt;</span>Bob<span class="token operator">:</span> Hello Bob<span class="token punctuation">,</span> how are you<span class="token operator">?</span>
+    alt is sick
+        Bob<span class="token operator">-&gt;</span><span class="token operator">&gt;</span>Alice<span class="token operator">:</span> Not so good <span class="token operator">:</span><span class="token punctuation">(</span>
+    <span class="token keyword">else</span> is well
+        Bob<span class="token operator">-&gt;</span><span class="token operator">&gt;</span>Alice<span class="token operator">:</span> Feeling fresh like a daisy
+    end
+    opt Extra response
+        Bob<span class="token operator">-&gt;</span><span class="token operator">&gt;</span>Alice<span class="token operator">:</span> Thanks <span class="token keyword">for</span> asking
+    end
+<span class="token operator">&lt;</span><span class="token operator">/</span>mermaid<span class="token operator">&gt;</span>
+</code></pre></div><div class="mermaid">
+sequenceDiagram
+    Alice-&gt;&gt;Bob: Hello Bob, how are you?
+    alt is sick
+        Bob-&gt;&gt;Alice: Not so good :(
+    else is well
+        Bob-&gt;&gt;Alice: Feeling fresh like a daisy
+    end
+    opt Extra response
+        Bob-&gt;&gt;Alice: Thanks for asking
+    end
+</div> <h3 id="gantt-diagram"><a href="#gantt-diagram" class="header-anchor">#</a> Gantt diagram</h3> <div class="language-scala extra-class"><pre class="language-scala"><code><span class="token generics"><span class="token punctuation">&lt;</span>mermaid<span class="token punctuation">&gt;</span></span>
+gantt
+section Section
+Completed    <span class="token operator">:</span>done<span class="token punctuation">,</span>    des1<span class="token punctuation">,</span> <span class="token number">2014</span><span class="token operator">-</span><span class="token number">01</span><span class="token operator">-</span><span class="token number">06</span><span class="token punctuation">,</span> <span class="token number">2014</span><span class="token operator">-</span><span class="token number">01</span><span class="token operator">-</span><span class="token number">08</span>
+Active       <span class="token operator">:</span>active<span class="token punctuation">,</span>  des2<span class="token punctuation">,</span> <span class="token number">2014</span><span class="token operator">-</span><span class="token number">01</span><span class="token operator">-</span><span class="token number">07</span><span class="token punctuation">,</span> <span class="token number">3d</span>
+Parallel <span class="token number">1</span>   <span class="token operator">:</span>         des3<span class="token punctuation">,</span> after des1<span class="token punctuation">,</span> <span class="token number">1d</span>
+Parallel <span class="token number">2</span>   <span class="token operator">:</span>         des4<span class="token punctuation">,</span> after des1<span class="token punctuation">,</span> <span class="token number">1d</span>
+Parallel <span class="token number">3</span>   <span class="token operator">:</span>         des5<span class="token punctuation">,</span> after des3<span class="token punctuation">,</span> <span class="token number">1d</span>
+Parallel <span class="token number">4</span>   <span class="token operator">:</span>         des6<span class="token punctuation">,</span> after des4<span class="token punctuation">,</span> <span class="token number">1d</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>mermaid<span class="token operator">&gt;</span>
+</code></pre></div><div class="mermaid">
+gantt
+section Section
+Completed    :done,    des1, 2014-01-06, 2014-01-08
+Active       :active,  des2, 2014-01-07, 3d
+Parallel 1   :         des3, after des1, 1d
+Parallel 2   :         des4, after des1, 1d
+Parallel 3   :         des5, after des3, 1d
+Parallel 4   :         des6, after des4, 1d
+</div> <h3 id="mermaid-8-4-3-state-diagram"><a href="#mermaid-8-4-3-state-diagram" class="header-anchor">#</a> Mermaid 8.4.3+ =&gt; State diagram</h3> <div class="language-scala extra-class"><pre class="language-scala"><code><span class="token generics"><span class="token punctuation">&lt;</span>mermaid<span class="token punctuation">&gt;</span></span>
+stateDiagram
+  <span class="token punctuation">[</span><span class="token operator">*</span><span class="token punctuation">]</span> <span class="token operator">--</span><span class="token operator">&gt;</span> Still
+  Still <span class="token operator">--</span><span class="token operator">&gt;</span> <span class="token punctuation">[</span><span class="token operator">*</span><span class="token punctuation">]</span>
+  Still <span class="token operator">--</span><span class="token operator">&gt;</span> Moving
+  Moving <span class="token operator">--</span><span class="token operator">&gt;</span> Still
+  Moving <span class="token operator">--</span><span class="token operator">&gt;</span> Crash
+  Crash <span class="token operator">--</span><span class="token operator">&gt;</span> <span class="token punctuation">[</span><span class="token operator">*</span><span class="token punctuation">]</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>mermaid<span class="token operator">&gt;</span>
+</code></pre></div><div class="mermaid">
+stateDiagram
+  [*] --&gt; Still
+  Still --&gt; [*]
+  Still --&gt; Moving
+  Moving --&gt; Still
+  Moving --&gt; Crash
+  Crash --&gt; [*]
+</div> <h2 id="uml"><a href="#uml" class="header-anchor">#</a> UML</h2> <h3 id="plantuml"><a href="#plantuml" class="header-anchor">#</a> PlantUml</h3> <div class="language-scala extra-class"><pre class="language-scala"><code><span class="token annotation punctuation">@startuml</span>
+Bob <span class="token operator">-&gt;</span> Alice <span class="token operator">:</span> hello
+<span class="token annotation punctuation">@enduml</span>
+<span class="token operator">&lt;</span>br<span class="token operator">/</span><span class="token operator">&gt;</span>
+</code></pre></div><img src="https://www.plantuml.com/plantuml/svg/SoWkIImgAStDuNBAJrBGjLDmpCbCJbMmKiX8pSd9vt98pKi1IW80" alt="uml diagram"> <br> <h3 id="mindmap"><a href="#mindmap" class="header-anchor">#</a> MindMap</h3> <div class="language-scala extra-class"><pre class="language-scala"><code><span class="token annotation punctuation">@startuml</span>
+<span class="token annotation punctuation">@startmindmap</span>
+
+title My <span class="token keyword">super</span> title
+
+<span class="token operator">*</span> <span class="token generics"><span class="token punctuation">&lt;</span><span class="token operator">&amp;</span>flag<span class="token punctuation">&gt;</span></span>Debian
+<span class="token operator">*</span><span class="token operator">*</span> <span class="token generics"><span class="token punctuation">&lt;</span><span class="token operator">&amp;</span>globe<span class="token punctuation">&gt;</span></span>Ubuntu
+<span class="token operator">*</span><span class="token operator">*</span><span class="token operator">*</span> Linux Mint
+<span class="token operator">*</span><span class="token operator">*</span><span class="token operator">*</span> Kubuntu
+<span class="token operator">*</span><span class="token operator">*</span><span class="token operator">*</span> Lubuntu
+<span class="token operator">*</span><span class="token operator">*</span><span class="token operator">*</span> KDE Neon
+<span class="token operator">*</span><span class="token operator">*</span> <span class="token generics"><span class="token punctuation">&lt;</span><span class="token operator">&amp;</span>graph<span class="token punctuation">&gt;</span></span>LMDE
+<span class="token operator">*</span><span class="token operator">*</span> <span class="token generics"><span class="token punctuation">&lt;</span><span class="token operator">&amp;</span>pulse<span class="token punctuation">&gt;</span></span>SolydXK
+<span class="token operator">*</span><span class="token operator">*</span> <span class="token generics"><span class="token punctuation">&lt;</span><span class="token operator">&amp;</span>people<span class="token punctuation">&gt;</span></span>SteamOS
+<span class="token operator">*</span><span class="token operator">*</span> <span class="token generics"><span class="token punctuation">&lt;</span><span class="token operator">&amp;</span>star<span class="token punctuation">&gt;</span></span>Raspbian <span class="token keyword">with</span> <span class="token namespace">a</span> very long name
+<span class="token operator">*</span><span class="token operator">*</span><span class="token operator">*</span> <span class="token generics"><span class="token punctuation">&lt;</span>s<span class="token punctuation">&gt;</span></span>Raspmbc<span class="token operator">&lt;</span><span class="token operator">/</span>s<span class="token operator">&gt;</span> <span class="token keyword">=&gt;</span> OSMC
+<span class="token operator">*</span><span class="token operator">*</span><span class="token operator">*</span> <span class="token generics"><span class="token punctuation">&lt;</span>s<span class="token punctuation">&gt;</span></span>Raspyfi<span class="token operator">&lt;</span><span class="token operator">/</span>s<span class="token operator">&gt;</span> <span class="token keyword">=&gt;</span> Volumio
+
+caption figure <span class="token number">1</span>
+
+<span class="token annotation punctuation">@endmindmap</span>
+<span class="token annotation punctuation">@enduml</span>
+<span class="token operator">&lt;</span>br<span class="token operator">/</span><span class="token operator">&gt;</span>
+</code></pre></div><img src="https://www.plantuml.com/plantuml/svg/JP1BQyD038Jl-XKwzU1BwTrT37LEZXkeQUbLJcH7i2_sqTR_llOc0TzclX6Ic2Oc2YaR3KrHHkp5a0T8aZHZls3CdWCM2r1X_JHfcbNBev25QWEpTYEhpp7Rb5TIuL5i_iDUR2gsoxjefxlsWE_i7bi2-QiwzktXvdtMaTNWz7Bvxkw8dTShIqpcDDpOzhNweEYtV_1NqXK9VpWig9sTqPBXSgoEPSgCv_evAdnLU1hwjtsqJFA8lfpEHXp0cNmIPt6IEGV65u26ruBk9MrwhUuV" alt="uml diagram"> <br> <h3 id="nodes"><a href="#nodes" class="header-anchor">#</a> Nodes</h3> <div class="language-scala extra-class"><pre class="language-scala"><code><span class="token annotation punctuation">@startuml</span>
+node in as <span class="token string">&quot;input&quot;</span>
+node p as <span class="token string">&quot;Pre-processing&quot;</span>
+node fm as <span class="token string">&quot;Feature Mining&quot;</span>
+node fs as <span class="token string">&quot;Feature Selection&quot;</span>
+node fr as <span class="token string">&quot;Feature Reduction&quot;</span>
+node m as <span class="token string">&quot;Modelling&quot;</span>
+node a as <span class="token string">&quot;Accepted Results?&quot;</span>
+node pp as <span class="token string">&quot;Post-processing&quot;</span>
+node o as <span class="token string">&quot;Output&quot;</span>
+
+in <span class="token operator">-&gt;</span> p
+p <span class="token punctuation">.</span><span class="token punctuation">.</span>&gt; fm
+fm <span class="token punctuation">.</span><span class="token punctuation">.</span>&gt; fs
+fs <span class="token punctuation">.</span><span class="token punctuation">.</span>&gt; fr
+fr <span class="token punctuation">.</span><span class="token punctuation">.</span>&gt; m
+m <span class="token punctuation">.</span><span class="token punctuation">.</span>&gt; a
+a <span class="token punctuation">.</span><span class="token punctuation">.</span>&gt; fm <span class="token operator">:</span> no
+a <span class="token operator">-&gt;</span> pp <span class="token operator">:</span> yes
+pp <span class="token operator">-&gt;</span> o
+<span class="token annotation punctuation">@enduml</span>
+</code></pre></div><img src="https://www.plantuml.com/plantuml/svg/PP0n3i8m34LtdoBgtXw0ePI5hGB12QB4e4Xf4iNEmErnqrQqOllVBx7-zq2iCvV9GuWMbGjAasfSI8MRPPJgv9wnJJaQ97BXlQBNLDaLDPUCQdHXn-Z0dkZHi8jXm_c07sZB7Y-BHv7U_tRgEhqOWudHoYSgdkcy1LsJHkB_gB6oM-5Q3AHdswi4INLTBpr0gbH58C6hoY0PPpN1mZJezRKwgH35pIkIc0yIY10ROS1WvPnV" alt="uml diagram"> <h3 id="steps-flow"><a href="#steps-flow" class="header-anchor">#</a> Steps flow</h3> <div class="language-scala extra-class"><pre class="language-scala"><code><span class="token annotation punctuation">@startuml</span>
+  <span class="token operator">|</span>Required Steps<span class="token operator">|</span>
+  <span class="token operator">:</span><span class="token string">&quot;Start Assignment&quot;</span><span class="token punctuation">;</span>
+  <span class="token operator">|</span>#AntiqueWhite<span class="token operator">|</span>Documentation<span class="token operator">|</span>
+  <span class="token operator">:</span>Create Git Repo<span class="token operator">/</span>Overleaf<span class="token punctuation">;</span>
+  <span class="token operator">:</span>Copy Down Questions<span class="token punctuation">;</span>
+  <span class="token operator">|</span>#LightBlue<span class="token operator">|</span>Git<span class="token operator">|</span>
+  <span class="token operator">:</span>Initial Barebones Commit<span class="token punctuation">;</span>
+  <span class="token operator">|</span>Required Steps<span class="token operator">|</span>
+  <span class="token operator">:</span><span class="token string">&quot;Answer Questions&quot;</span><span class="token punctuation">;</span>
+  <span class="token operator">:</span><span class="token string">&quot;Submit Assignment&quot;</span><span class="token punctuation">;</span>
+  <span class="token operator">|</span>Git<span class="token operator">|</span>
+  <span class="token operator">:</span><span class="token string">&quot;Update Local Repo&quot;</span><span class="token punctuation">;</span>
+  <span class="token operator">:</span>&quot;Update CENG4B Notes<span class="token punctuation">;</span>
+  stop
+<span class="token annotation punctuation">@enduml</span>
+</code></pre></div><img src="https://www.plantuml.com/plantuml/svg/TP31Ri8m38RlF8NLFS0kEwqNsZ8X9CG4QDevK0yijNQ87T2aFloIZ6c7QLV_-Nv_pbpD1OlZC0EOTdY95B27lQ7NAOsUgttEeL6b4u_8LjNvvKF3HfU8xsSod1PoZ3bpHi85wm8wGrYImGwzFBvUCGpeFkeIYl-4XTmOjX4rC_fTkgRJsTeXufJ0qhDYCd83j2xWGHWLEXb7ile_tORrXk6tkEYcA-8XKN_E-5bJlVa--wxbc9PbupjtdtSlc-LJ2ninBAfgucTpv3vzt1S0" alt="uml diagram"> <h3 id="notes-flow"><a href="#notes-flow" class="header-anchor">#</a> Notes flow</h3> <div class="language-scala extra-class"><pre class="language-scala"><code><span class="token annotation punctuation">@startuml</span>
+<span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span> <span class="token operator">--</span><span class="token operator">&gt;</span> <span class="token punctuation">[</span>File System <span class="token punctuation">]</span> <span class="token string">&quot;input.json &quot;</span>
+note left
+<span class="token number">1.</span> Read Entire File into memory
+end note
+<span class="token operator">--</span><span class="token operator">&gt;</span><span class="token punctuation">[</span>Available Memory<span class="token punctuation">]</span><span class="token string">&quot;JSON data loaded in memory&quot;</span>
+note left
+<span class="token number">2.</span> Process file
+in memory<span class="token punctuation">.</span>
+end note
+note right
+When loading a file into
+memory to <span class="token namespace">be</span> parsed as
+JSON or CSV<span class="token punctuation">,</span> we’re limited
+by the max string size
+in Node<span class="token punctuation">.</span>js<span class="token operator">:</span> around <span class="token number">536</span> MB
+as of Node v8
+end note
+<span class="token operator">--</span><span class="token operator">&gt;</span> <span class="token punctuation">[</span>File System<span class="token punctuation">]</span> <span class="token string">&quot;output.json&quot;</span>
+note left
+<span class="token number">3.</span> Write transform data back into system
+end note
+<span class="token operator">--</span><span class="token operator">&gt;</span> <span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span>
+<span class="token annotation punctuation">@enduml</span>
+</code></pre></div><img src="https://www.plantuml.com/plantuml/svg/LL7DJW8n4BxtARvmKYERAD4O3mOrUZ01ZIHo81ncwInRtRQaxQ9uyZLyFP_4eVW3rvdlRxxfnqGXjRPHUmVxw7OlCBar3MEqYeajfkWOjsXJyHozGqSvdnWDLqaT5NXaqhXnoGH69XcNF2nR7rQAdSOQhKHpShaaqr0fa47UJZjte_iXD2L2uqcp5kuFSzlakC13y3EE4PKOg3zGyQ-VqS7CwwJ6DRkiPzmSb2avazgG8EbAne9254EAAeVm0TUZfqEyyjV7frpI66iIQrKAlcPOUaDCOQqOpNkECFIQfP1pKF2jn3ZfdM9mfIZ2Ltc9vTdE_JkTIgM-JR-TRb_RAp0EueqKoCNA1xjfgAJPowRRc1LsjULlgYyJ-U4t" alt="uml diagram"> <h3 id="solidity-diagraph"><a href="#solidity-diagraph" class="header-anchor">#</a> Solidity Diagraph</h3> <h4 id="sample-1"><a href="#sample-1" class="header-anchor">#</a> sample 1</h4> <div class="language-scala extra-class"><pre class="language-scala"><code><span class="token annotation punctuation">@startuml</span>
+digraph foo <span class="token punctuation">{</span>
+  node <span class="token punctuation">[</span>style<span class="token operator">=</span>rounded<span class="token punctuation">]</span>
+  node1 <span class="token punctuation">[</span>shape<span class="token operator">=</span>box<span class="token punctuation">]</span>
+  node2 <span class="token punctuation">[</span>fillcolor<span class="token operator">=</span>yellow<span class="token punctuation">,</span> style<span class="token operator">=</span><span class="token string">&quot;rounded,filled&quot;</span><span class="token punctuation">,</span> shape<span class="token operator">=</span>diamond<span class="token punctuation">]</span>
+  node3 <span class="token punctuation">[</span>shape<span class="token operator">=</span>record<span class="token punctuation">,</span> label<span class="token operator">=</span><span class="token string">&quot;{ a | b | c }&quot;</span><span class="token punctuation">]</span>
+
+  node1 <span class="token operator">-&gt;</span> node2 <span class="token operator">-&gt;</span> node3
+<span class="token punctuation">}</span>
+<span class="token annotation punctuation">@enduml</span>
+</code></pre></div><img src="https://www.plantuml.com/plantuml/svg/FOyn3eCm34NtdCBAJ8UMEHNtG0m9DWN9n2W4jOXozwPjOB1aFVbzszKSROZBo0g7Hx1J3vq8R0h02nBKSroPJ9358s6JyJNntavadBmETeEw6vXROGbc9MPv5l2tTTQBxm2XJlndus17yMTgUQG6QYLW0MmTiT4RM7Y3IzN2hXjr7d6vvysvATMkAlAOlla0" alt="uml diagram"> <h4 id="sample-2"><a href="#sample-2" class="header-anchor">#</a> sample 2</h4> <div class="language-scala extra-class"><pre class="language-scala"><code><span class="token annotation punctuation">@startuml</span>
+strict digraph cool <span class="token punctuation">{</span>
+  exists <span class="token punctuation">[</span>color<span class="token operator">=</span>blue<span class="token punctuation">]</span>
+  authenticate <span class="token punctuation">[</span>color<span class="token operator">=</span>blue<span class="token punctuation">]</span>
+  require
+  create
+  UserCreated
+  destroy
+  UserDestroyed
+  get <span class="token punctuation">[</span>color<span class="token operator">=</span>blue<span class="token punctuation">]</span>
+  authenticate <span class="token operator">-&gt;</span> require
+  create <span class="token operator">-&gt;</span> UserCreated
+  destroy <span class="token operator">-&gt;</span> require
+  destroy <span class="token operator">-&gt;</span> UserDestroyed
+  get <span class="token operator">-&gt;</span> require
+<span class="token punctuation">}</span>
+<span class="token annotation punctuation">@enduml</span>
+</code></pre></div><img src="https://www.plantuml.com/plantuml/svg/VP312i8m44Jl-Ohz0Jz1AUWlU18FSJEqWTZePWEA-EzkMmzLYxUPDyCER5FKYzPpSaKbibA8hVXBHvnpeeSZmYqMBNJWdBAiJwdYQDHNxT1hPA_upWJN6WMcM62vYNs1R4SJp0NOMBw_-MvoOz92_owjDZ_N1xPu_hCyWqkZi-xJDUY3lUG5" alt="uml diagram"> <h2 id="quickstart-new-project"><a href="#quickstart-new-project" class="header-anchor">#</a> Quickstart new project</h2> <p>Start from documentation:</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">mkdir</span> /tmp/1 <span class="token operator">&amp;&amp;</span> <span class="token function">wget</span> -qO- https://github.com/daggerok/vuepress-diagrams/archive/master.zip <span class="token operator">|</span> <span class="token function">tar</span> xvf - -C <span class="token variable">$_</span>
 <span class="token comment"># wget -qO- https://github.com/daggerok/vuepress-diagrams/archive/master.zip | tar xvf -</span>
 <span class="token comment"># tar -xvf &lt;(curl -sL https://github.com/daggerok/vuepress-diagrams/archive/master.zip)</span>
 <span class="token comment"># jar -xvf &lt;(curl -sL https://github.com/daggerok/vuepress-diagrams/archive/master.zip)</span>
@@ -75,10 +249,9 @@ graph TD
         <span class="token key atrule">with</span><span class="token punctuation">:</span>
           <span class="token key atrule">branch</span><span class="token punctuation">:</span> gh<span class="token punctuation">-</span>pages <span class="token comment"># The branch the action should deploy to.</span>
           <span class="token key atrule">folder</span><span class="token punctuation">:</span> .vuepress/dist <span class="token comment"># The folder the action should deploy.</span>
-</code></pre></div><p>That README.md documentation file is compiled and deployed on <a href="https://daggerok.github.io/vuepress-diagrams/" target="_blank" rel="noopener noreferrer">GitHub Pages<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h2 id="a-m-e-л-и-я"><a href="#a-m-e-л-и-я" class="header-anchor">#</a> A M E Л И Я</h2> <p>❤️
-🎾</p></div> <div class="footer">
+</code></pre></div><p>That README.md documentation file is compiled and deployed on <a href="https://daggerok.github.io/vuepress-diagrams/" target="_blank" rel="noopener noreferrer">GitHub Pages<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h2 id="rtfm"><a href="#rtfm" class="header-anchor">#</a> rtfm</h2> <ul><li>https://friendlyuser.github.io/vuepress-theme-cool-starter</li> <li>https://github.com/mermaid-js/mermaid</li> <li>https://github.com/KaTeX/KaTeX</li></ul></div> <div class="footer">
     Made by Maksim Kostromin with ❤️ 🤘
   </div></main></div><div class="global-ui"></div></div>
-    <script src="/vuepress-diagrams/assets/js/app.89425aeb.js" defer></script><script src="/vuepress-diagrams/assets/js/2.454d1032.js" defer></script><script src="/vuepress-diagrams/assets/js/11.857d5efa.js" defer></script><script src="/vuepress-diagrams/assets/js/10.208fd17e.js" defer></script>
+    <script src="/vuepress-diagrams/assets/js/app.69efda17.js" defer></script><script src="/vuepress-diagrams/assets/js/2.454d1032.js" defer></script><script src="/vuepress-diagrams/assets/js/11.bc96bbd9.js" defer></script><script src="/vuepress-diagrams/assets/js/10.208fd17e.js" defer></script>
   </body>
 </html>
