@@ -600,7 +600,7 @@ mkdir /tmp/1 && wget -qO- https://github.com/daggerok/vuepress-diagrams/archive/
 # wget -qO- https://github.com/daggerok/vuepress-diagrams/archive/master.zip | tar xvf -
 # tar -xvf <(curl -sL https://github.com/daggerok/vuepress-diagrams/archive/master.zip)
 # jar -xvf <(curl -sL https://github.com/daggerok/vuepress-diagrams/archive/master.zip)
-mv /tmp/1/vuepress-diagrams /tmp/my-new-project
+mv /tmp/1/vuepress-diagrams-master /tmp/my-new-project
 cd /tmp/my-new-project/
 # find and replace: vuepress-diagrams -> my-new-project
 # such as: BASE='/my-new-project/'
